@@ -2,8 +2,7 @@
 
 Sitio de una página con dos calculadoras que muestran **el procedimiento completo**, no solo el resultado. Tres archivos, sin dependencias.
 
-**Demo:** https://USUARIO.github.io/calculadoras-matematicas/
-
+   **Demo:** https://calculadoraalicia35.github.io/calculadora-alicia/
 Proyecto de [Calculadora Alicia](https://calculadoraaliciaai.es/), herramientas gratuitas de matemáticas para estudiantes de primaria y secundaria, padres y profesores.
 
 ```
