@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadoras matemáticas paso a paso | Calculadora Alicia</title>
+<meta name="description" content="Calculadora de operaciones combinadas y de regla de tres que muestran el procedimiento completo, paso a paso. Gratis, sin registro y de código abierto.">
+<meta name="author" content="Calculadora Alicia">
+<link rel="canonical" href="https://calculadoraaliciaai.es/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Calculadoras matemáticas paso a paso | Calculadora Alicia">
+<meta property="og:description" content="Operaciones combinadas y regla de tres resueltas paso a paso, con la regla aplicada en cada línea.">
+<meta property="og:url" content="https://calculadoraaliciaai.es/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="oculto-visual" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+	<div class="envoltura">
+		<a class="marca" href="#contenido">
+			<svg viewBox="0 0 100 100" aria-hidden="true">
+				<path d="M8 94 L41 18 Q50 4 59 18 L92 94 Z M50 46 L32 94 L68 94 Z" fill="#14352A" fill-rule="evenodd"/>
+				<path d="M50 49 Q50 62 63 62 Q50 62 50 75 Q50 62 37 62 Q50 62 50 49 Z" fill="#F0A202"/>
+			</svg>
+			Calculadora Alicia
+		</a>
+		<nav class="nav" aria-label="Secciones">
+			<a href="#operaciones-combinadas">Operaciones combinadas</a>
+			<a href="#regla-de-tres">Regla de tres</a>
+			<a href="#preguntas">Dudas</a>
+		</nav>
+	</div>
+</header>
+
+<main id="contenido">
+
+	<section class="portada">
+		<div class="envoltura">
+			<h1>Ver el resultado no enseña nada. Ver los pasos, sí.</h1>
+			<p>Estas dos calculadoras resuelven el ejercicio delante de ti, línea por línea, diciendo qué regla se aplica en cada momento. Así puedes encontrar el paso exacto donde te equivocaste.</p>
+
+			<dl class="pizarra">
+				<dt>2 + 3 × 4</dt>
+				<dd><span class="paso">Primero</span><span class="calculo">3 × 4 = 12</span></dd>
+				<dd><span class="paso">Después</span><span class="calculo">2 + 12</span></dd>
+				<dd class="final"><span class="paso">Resultado</span><span class="calculo">14</span></dd>
+				<dd class="mal">De izquierda a derecha darían 20, y esa es la respuesta que suele costar el punto.</dd>
+			</dl>
+
+			<div class="acciones">
+				<a class="boton" href="#operaciones-combinadas">Resolver una operación</a>
+				<a class="boton secundario" href="#regla-de-tres">Calcular una regla de tres</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="herramienta" id="operaciones-combinadas">
+		<div class="envoltura">
+			<h2>Operaciones combinadas</h2>
+			<p>Escribe la expresión como aparece en tu cuaderno, con paréntesis, corchetes, llaves, potencias o raíces. La calculadora resuelve una operación por paso y te dice por qué esa va primero.</p>
+
+			<!-- WIDGET: OPERACIONES COMBINADAS -->
+			<div class="aoc-root" role="region" aria-label="Calculadora de operaciones combinadas">
+				<div class="aoc-header">
+					<svg class="aoc-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<path d="M8 94 L41 18 Q50 4 59 18 L92 94 Z M50 46 L32 94 L68 94 Z" fill="#FFFFFF" fill-rule="evenodd"/>
+						<path d="M50 49 Q50 62 63 62 Q50 62 50 75 Q50 62 37 62 Q50 62 50 49 Z" fill="#F7AD00"/>
+					</svg>
+					<div class="aoc-brand">
+						<div class="aoc-brand-name">Calculadora Alicia <span class="ai">AI</span></div>
+						<div class="aoc-brand-sub">Operaciones combinadas · Paso a paso</div>
+					</div>
+					<span class="aoc-badge">GRATIS</span>
+				</div>
+				<div class="aoc-body">
+					<div class="aoc-mode-tabs" role="tablist">
+						<button type="button" class="aoc-tab active" data-mode="calc" role="tab" aria-selected="true">
+							<span class="aoc-ico" data-i="calc"></span>Calculadora
+						</button>
+						<button type="button" class="aoc-tab" data-mode="practica" role="tab" aria-selected="false">
+							<span class="aoc-ico" data-i="practice"></span>Practicar
+						</button>
+						<button type="button" class="aoc-tab" data-mode="reglas" role="tab" aria-selected="false">
+							<span class="aoc-ico" data-i="rules"></span>Reglas
+						</button>
+					</div>
+					<div class="aoc-shell" data-role="body"></div>
+				</div>
+			</div>
+
+			<div class="sugerencias"><p>
+				<strong>Prueba con:</strong>
+				<span>20 − [3 × (8 − 5) + 2]</span>
+				<span>3² + √49 × 2 − 4</span>
+				<span>1/2 + 3/4 × 2/3</span></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="herramienta" id="regla-de-tres">
+		<div class="envoltura">
+			<h2>Regla de tres</h2>
+			<p>Tres valores conocidos, uno por encontrar. Elige si la relación es directa o inversa, o usa el modo compuesto cuando intervienen varias magnitudes a la vez, como obreros, horas y días.</p>
+
+			<!-- WIDGET: REGLA DE TRES -->
+			<div class="art-root" role="region" aria-label="Calculadora de regla de tres">
+				<div class="art-header">
+					<svg class="art-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<path d="M8 94 L41 18 Q50 4 59 18 L92 94 Z M50 46 L32 94 L68 94 Z" fill="#FFFFFF" fill-rule="evenodd"/>
+						<path d="M50 49 Q50 62 63 62 Q50 62 50 75 Q50 62 37 62 Q50 62 50 49 Z" fill="#F7AD00"/>
+					</svg>
+					<div class="art-brand">
+						<div class="art-brand-name">Calculadora Alicia <span class="ai">AI</span></div>
+						<div class="art-brand-sub">Regla de tres · Paso a paso</div>
+					</div>
+					<span class="art-badge">GRATIS</span>
+				</div>
+				<div class="art-body">
+					<div class="art-mode-tabs" role="tablist">
+						<button type="button" class="art-tab active" data-mode="simple" role="tab" aria-selected="true">
+							<span class="art-ico" data-i="simple"></span>Simple
+						</button>
+						<button type="button" class="art-tab" data-mode="compuesta" role="tab" aria-selected="false">
+							<span class="art-ico" data-i="compuesta"></span>Compuesta
+						</button>
+						<button type="button" class="art-tab" data-mode="porcentajes" role="tab" aria-selected="false">
+							<span class="art-ico" data-i="pct"></span>Porcentajes
+						</button>
+					</div>
+					<div class="art-shell" data-role="body"></div>
+				</div>
+			</div>
+
+			<div class="sugerencias"><p>
+				<strong>Prueba con:</strong>
+				<span>5 kg cuestan 8 €, ¿y 12 kg?</span>
+				<span>6 obreros tardan 30 días, ¿y 10 obreros?</span></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="seccion" id="como-usarlas">
+		<div class="envoltura">
+			<h2>Cómo sacarles partido</h2>
+			<p class="entradilla">Una calculadora que da la respuesta te saca del apuro una tarde. Una que muestra el procedimiento te sirve el día del examen, cuando no la tienes delante.</p>
+			<p>Resuelve el ejercicio primero en tu cuaderno. Después compara línea por línea con el procedimiento de la calculadora. En cuanto encuentres la primera línea que no coincide, ya sabes dónde está el fallo, y casi siempre es la misma clase de fallo: un signo perdido, una multiplicación hecha antes de tiempo o un paréntesis resuelto de fuera hacia dentro.</p>
+
+			<div class="marco">
+				<h3>Casos que suelen fallar</h3>
+				<ul>
+					<li><code>12 ÷ 3 × 2</code> da <strong>8</strong>, no 2: la división y la multiplicación tienen la misma prioridad y se resuelven de izquierda a derecha.</li>
+					<li><code>−3²</code> da <strong>−9</strong>, pero <code>(−3)²</code> da <strong>9</strong>: sin paréntesis el exponente afecta solo al 3.</li>
+					<li><code>1/2 + 3/4 × 2/3</code> da <strong>1</strong> exacto: la calculadora trabaja con fracciones, no con decimales redondeados.</li>
+					<li>Más obreros significa menos días: ese problema es una regla de tres inversa, aunque parezca directa.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="seccion" id="preguntas">
+		<div class="envoltura">
+			<h2>Dudas frecuentes</h2>
+
+			<div class="faq">
+				<details>
+					<summary>¿Hay que registrarse o pagar algo?</summary>
+					<div class="respuesta">No. Las dos calculadoras son gratuitas, no piden cuenta ni datos personales y funcionan directamente en el navegador del teléfono, la tableta o la computadora.</div>
+				</details>
+				<details>
+					<summary>¿Para qué curso sirven?</summary>
+					<div class="respuesta">Desde primaria hasta bachillerato. En primaria se usan sobre todo las operaciones con paréntesis sencillos y la regla de tres simple; en secundaria aparecen los negativos, las potencias, las raíces, las fracciones y la regla de tres compuesta.</div>
+				</details>
+				<details>
+					<summary>¿Puedo escribir los números con coma decimal?</summary>
+					<div class="respuesta">Sí. Las calculadoras aceptan tanto <code>2,5</code> como <code>2.5</code>, y devuelven los resultados en formato español: <code>19,2</code> y <code>1.440</code>.</div>
+				</details>
+				<details>
+					<summary>¿Los resultados con fracciones son exactos?</summary>
+					<div class="respuesta">Sí. Mientras la operación lo permita, los cálculos se hacen con fracciones exactas en lugar de decimales aproximados, así que <code>1/2 + 3/4 × 2/3</code> devuelve 1 y no 0,999999.</div>
+				</details>
+				<details>
+					<summary>¿Puedo usar estas calculadoras en mi propia web?</summary>
+					<div class="respuesta">Sí. El código es abierto, con licencia GPL-2.0-or-later. Copia el bloque del widget que necesites y enlaza los archivos <code>style.css</code> y <code>script.js</code>: no dependen de jQuery ni de ninguna librería externa.</div>
+				</details>
+				<details>
+					<summary>¿Qué hago si un resultado me parece incorrecto?</summary>
+					<div class="respuesta">Anota la expresión exacta que escribiste y el resultado que esperabas, y cuéntanoslo abriendo una incidencia en el repositorio. Los errores de cálculo se corrigen antes que cualquier otra cosa.</div>
+				</details>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<footer class="pie">
+	<div class="envoltura">
+		<h2>Más matemáticas paso a paso</h2>
+		<p>Estas dos calculadoras forman parte de Calculadora Alicia, donde encontrarás herramientas y guías para fracciones, división larga, porcentajes, álgebra y matrices.</p>
+		<div class="pie-enlaces">
+			<a href="https://calculadoraaliciaai.es/">Calculadora Alicia</a>
+			<a href="https://calculadoraaliciaai.es/jerarquia-de-operaciones/">Jerarquía de operaciones</a>
+			<a href="https://calculadoraaliciaai.es/fracciones/">Fracciones</a>
+			<a href="https://calculadoraaliciaai.es/division-larga/">División larga</a>
+			<a href="https://calculadoraaliciaai.es/numeros-primos/">Números primos</a>
+		</div>
+		<p class="pie-legal">Código abierto bajo licencia GPL-2.0-or-later. Hecho para estudiantes, padres y profesores.</p>
+	</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
